@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#0b0f14;color:#e9eef5;line-height:1.6}
+    .wrap{max-width:900px;margin:0 auto;padding:24px}
+    a{color:#7cc4ff}
+    .card{background:#121a23;border:1px solid #223040;border-radius:16px;padding:18px}
+    h1{margin:0 0 10px}
+    p,label{color:#b9c4d0}
+    input,textarea{
+      width:100%; padding:12px; border-radius:12px;
+      border:1px solid #223040; background:#0b0f14; color:#e9eef5;
+      font-size:14px;
+    }
+    textarea{min-height:140px; resize:vertical}
+    .row{display:grid; gap:12px; margin-top:12px}
+    button{
+      margin-top:12px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(124,196,255,.35);
+      background: rgba(124,196,255,.14);
+      color:#e9eef5;
+      font-weight:700;
+      cursor:pointer;
+    }
+    button:hover{transform: translateY(-1px)}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="index.html">← Back to Home</a></p>
+    <div class="card">
+      <h1>Contact</h1>
+      <p class="small">
+        For questions or feedback, you can email us directly or use the form below.
+      </p>
+
+      <!-- OPTION A (simplest): show your email -->
+      <p><b>Email:</b> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+
+      <hr style="border:0;border-top:1px solid #223040; margin:16px 0;" />
+
+      <!-- OPTION B: basic form (needs a backend or form service to actually send) -->
+      <p class="small">
+        Form note: HTML forms need a backend or a form service (like Formspree) to send messages.
+        If you don’t have one yet, just keep the email above for now.
+      </p>
+
+      <form method="post" action="#">
+        <div class="row">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="John" />
+          </label>
+
+          <label>
+            Your email
+            <input type="email" name="email" placeholder="john@email.com" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" placeholder="Type your message..."></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
